@@ -1,0 +1,73 @@
+tablas:
+	<table></table>
+		<thead>
+			<tr>
+				<th>
+		(...)
+		<body>
+			<tr>
+				<td>
+		(...)
+
+
+elementos de bloque:
+<main> Define el contenido principal
+	<header> //cabecera
+	<nav> //menu
+	<aside> //elemento que no tiene nada que ver
+	<article> //elemento articulo
+
+<a link= (...) target="_blank"> //abrir en pestaña nueva
+.................."_system"> //abre en pestaña en tro dospositivo (android)
+<a href="mailto:hello@mail.com">Mail me!
+
+<img src (...) alt = "cup of cafe con leche"> //importante accesibilidad voz alta
+
+/////////////////////////////////////////////////////////////////
+  NO PUEDE FALTAR ARCHIVO NORMALIZE PARA QUE FUNCIONE LA PAGINA EN CUALQUIER NAVEGADOR!!!
+////////////////////////////////////////////////////////////////
+
+css->
+		vw = view width
+
+		margin: 5px(up) 5px(right) 5px(down) 5px(let)
+		margin:100px(arriba y abajo) auto(derecha e izquierda)
+
+		a:hover (cuando tengo el raton encima)
+		a:focus cuando se hace tab
+		a:active (cuando se hace click)
+		a:visite (cuando se ha visitado ya el enlace)
+
+
+		/*----------------------------------*
+		Seleccionar filas pares de la table
+		table tr:nth-child(2n) td {
+		    background-color: red;
+		}
+		Seleccionar filas impares de una tabla
+		table tr:nth-child(2n+1) td {
+		    background-color: red;
+		}
+		*------------------------------------*/
+
+		CUANTO MÁS ESPECÍFICO SEA LA LLAMADA EN EL CSS ((es decir, #id > .class > type))  y si hay 3x#+. > #+3x.)
+
+		para declarar b?em (estilos de botones por ejemplo) decleramos clase con nombre e identificador:
+			p.e: "navItem nav-item--active"
+
+
+		Se acoseja que se declare las medidas bases de body y titulos para así realizar tamaños de fuente en base a las medidas estandar. Esto se hace con rem
+
+		el rem ('root-em' medida) es relativo a la fuente base (al font-size más básico que se ha definido)
+		em se va aplicando de forma acumulativa.
+
+		El tamaño em se divide (tam que queremos)/16px
+
+
+
+*----------------------------------------------* JQUERY *------------------------------------------*
++$('#number').val() === 3 //Cambiamos el itpo de string (que es lo que me devuelve) a entero y luego lo comparamos, si no hacemos la conversión, siempre te dara negativo, ya que alser string devolvera el codigo ascii
+
+No es muy recomendable abusar de las animaciones que proporciona JQuery
+
+los elementos submit en JQuery solo sirven para los formularios
